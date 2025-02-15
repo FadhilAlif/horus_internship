@@ -11,7 +11,8 @@ exports.login = async (req, res) => {
 
     // Cari user berdasarkan username
     const user = await User.findOne({ where: { username } });
-    if (!user) return res.status(404).json({ error: "User tidak ditemukan" });
+    if (!user)
+      return res.status(404).json({ error: "Username tidak ditemukan" });
 
     // Cek password
     const isMatch = await bcrypt.compare(password, user.password);

@@ -7,10 +7,10 @@ const authController = require("../controllers/AuthController");
 router.post("/login", authController.login);
 
 // Rute untuk mengelola user
-router.get("/user", userController.getAllUsers);
-router.get("/user/:id", userController.getUserById);
-router.put("/user/:id", userController.updateUser);
-router.post("/user", userController.createUser);
-router.delete("/user/:id", userController.deleteUser);
+router.get("/users", userController.getAllUsers);
+router.get("/users/:id", userController.getUserById);
+router.put("/users/:id", userController.updateUser);
+router.post("/users", userController.createUser);
+router.delete("/users/:id", userController.deleteUser);
 
 module.exports = router;
