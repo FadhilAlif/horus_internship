@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Build files
+dist/
+.vite/
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
